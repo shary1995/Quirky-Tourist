@@ -111,10 +111,10 @@ function updateCartTotal () {
 document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked);
 
 /*Function click event to Purchase items */
-function purchaseClicked(event) {
-    let cartItems = document.getElementsByClassName('cart-items')[0];
+function purchaseClicked() {
     alert('Thank you for your purchase');
-
+    
+    let cartItems = document.getElementsByClassName('cart-items')[0];
     while(cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
